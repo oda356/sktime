@@ -836,7 +836,7 @@ def make_attention_lstm():
                 "attention_initializer": initializers.serialize(
                     self.attention_initializer
                 ),
-                "use_chrono_initialization": self.unit_forget_bias,
+                "unit_forget_bias": self.unit_forget_bias,
                 "kernel_regularizer": regularizers.serialize(self.kernel_regularizer),
                 "recurrent_regularizer": regularizers.serialize(
                     self.recurrent_regularizer
